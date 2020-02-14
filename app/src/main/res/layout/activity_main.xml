@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="0dp"
+    android:background="#264592"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="241dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#264592">
+
+
+            <TextView
+                android:id="@+id/cityText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:text="..."
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/temperatureText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cityText"
+                android:layout_centerHorizontal="true"
+                android:text="..."
+                android:textColor="@android:color/white"
+                android:textSize="70sp" />
+
+
+            <TextView
+                android:id="@+id/temperatureFeel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temperatureText"
+                android:layout_centerHorizontal="true"
+                android:text="..."
+                android:textColor="@android:color/white"
+                android:textSize="40sp" />
+
+
+            <TextView
+                android:id="@+id/moreTextOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temperatureFeel"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:text="..."
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/moreTextTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moreTextOne"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="..."
+                android:textColor="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/imageRes"
+                android:layout_margin="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/temperatureFeel"
+                android:layout_width="130dp"
+                android:src="@drawable/ic_clear_day"
+                android:layout_height="130dp"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
